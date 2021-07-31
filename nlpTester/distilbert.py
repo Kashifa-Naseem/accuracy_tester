@@ -12,7 +12,7 @@ def predictandsave(model, msg, cat):
     df['Result'] = result
     cor = df['Result'].value_counts()['Pass']
     acc = cor/len(result)
-    print('accuracy: {}'.foramt(acc))
+    print('accuracy: {}'.format(acc))
     return df.to_csv('Predictions.csv')
 
             
